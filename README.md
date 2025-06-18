@@ -13,7 +13,7 @@
 
 ---
 
-## 💡 Tech Used
+## Tech Used
 
 - **Frontend**: HTML and  Tailwind CSS
 - **Backend**: Node.js and Express
@@ -27,7 +27,7 @@
 - Clean folder structure and secure `.env` setup
 - Email verification flow just like real SaaS apps
   
-## Screenshot
+## Screenshots
 ## Signup Form
 ![Signup Form](front.png)
 
