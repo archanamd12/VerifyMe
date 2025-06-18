@@ -26,5 +26,13 @@
 - Frontend and backend integrated via a POST request
 - Clean folder structure and secure `.env` setup
 - Email verification flow just like real SaaS apps
+  
+## Screenshot
+## Signup Form
+![Signup Form](front.png)
+
+## Thank You Page
+![Thank You Page](thankyou.png)
+
 
 
