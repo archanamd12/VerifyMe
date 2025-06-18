@@ -1,5 +1,14 @@
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-EMAIL=your_email@example.com
-PASS=your_email_app_password
+# 🔐 Ignore secrets
+backend/.env
+
+# 📦 Ignore heavy node_modules folder
+backend/node_modules/
+
+# 💻 Ignore system-specific junk files
+.DS_Store
+Thumbs.db
+
+# 💅 Optional: VS Code settings folder
+.vscode/
+
 
