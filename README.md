@@ -10,7 +10,7 @@
 - When users click the link, their email is verified
 - They’re then redirected to a thank you page
 
----
+
 
 ## Tech Used
 
