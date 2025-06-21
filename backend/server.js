@@ -35,7 +35,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// ✅ SINGLE /api/signup route
+
 app.post('/api/signup', async (req, res) => {
   const { name, email } = req.body;
 
@@ -52,23 +52,23 @@ app.post('/api/signup', async (req, res) => {
       text: message
     });
 
-  res.redirect('https://archanamd12.github.io/VerifyMe/thankyou.html'); // ✅ correct
+  res.redirect('https://archanamd12.github.io/VerifyMe/thank.html'); /
   } catch (err) {
-    console.error("❌ SIGNUP ERROR:", err);
+    console.error("SIGNUP ERROR:", err);
     res.status(500).send('Server error');
   }
 });
 
-// ✅ Email verification route
+//  Email verification 
 app.get('/api/verify/:id', async (req, res) => {
   try {
     await User.findByIdAndUpdate(req.params.id, { verified: true });
     res.send('✅ Email verified successfully!');
   } catch (err) {
-    res.status(400).send('❌ Verification failed');
+    res.status(400).send(' Verification failed');
   }
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${process.env.PORT}`);
+  console.log(`Server running at http://localhost:${process.env.PORT}`);
 });
