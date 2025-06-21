@@ -52,7 +52,7 @@ app.post('/api/signup', async (req, res) => {
       text: message
     });
 
-  res.redirect('https://archanamd12.github.io/VerifyMe/thank.html'); /
+  res.redirect('https://archanamd12.github.io/VerifyMe/thank.html'); 
   } catch (err) {
     console.error("SIGNUP ERROR:", err);
     res.status(500).send('Server error');
